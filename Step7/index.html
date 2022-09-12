@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html lang = "en-US">
+    <head>
+      <meta charset = "utf-8" />
+      <title>
+        Seth Aaron LaMay | Step 7
+      </title>
+    </head>
+    <body>
+        <input id="name-input" type="text" placeholder="Enter your name" />
+        <button id="my-button">Click Me</button>
+        
+        <script>
+            //this junk of code creates a button that you click once you enter your name.
+          var myButton = document.querySelector('#my-button');
+          var nameInput = document.querySelector('#name-input');
+          //this takes in the name and assigns it to the variable nameInput
+        
+          myButton.addEventListener('click', function () {
+            if (nameInput.value !== '') {
+                //this code checks to make sure that the text box is not empty and 
+                //if it is not empty then it will create a pop up using alert to display name.
+              alert('Hello ' + nameInput.value);
+            }
+          });
+        </script>
+    </body>
+  </html>
