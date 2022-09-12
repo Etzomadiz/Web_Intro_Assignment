@@ -11,11 +11,11 @@
         <button id="my-button">Click Me</button>
         
         <script>
-            //this junk of code creates a button that you click once you enter your name.
+            //this chunk of code creates a button that you click once you enter your name.
           var myButton = document.querySelector('#my-button');
           var nameInput = document.querySelector('#name-input');
           //this takes in the name and assigns it to the variable nameInput
-        
+          //the .addEventListener tells the program to do somthing when the button is clicked
           myButton.addEventListener('click', function () {
             if (nameInput.value !== '') {
                 //this code checks to make sure that the text box is not empty and 
